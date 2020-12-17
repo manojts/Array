@@ -40,7 +40,6 @@ int main(){
 		}
 	}
 	cout<<maxsum<<endl;
-
 	cout<<"Sub array is"<<endl;
 	printSubArray(arr,size);
 
