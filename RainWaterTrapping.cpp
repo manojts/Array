@@ -6,6 +6,7 @@ int main()
 	int size = 12;
 	int left [size] = {0};
 	int right [size] = {0};
+	//find max to left of every element
 	for(int i=0;i<size;i++){
 		if(i==0){
 			left[i] = arr[i];
@@ -17,6 +18,8 @@ int main()
 			left[i] = left[i-1];
 		}
 	}
+	//find max to right of every element
+	// find the, result += min(left_max,right_max) - arr[i]
 	int result =0;
 	for(int i=size-1;i>=0;i--){
 		if(i==size-1){
